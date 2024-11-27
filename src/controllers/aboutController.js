@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     res.json({
-        estudante: "João Pedro Acordi",
+        estudante: "João Pedro e Rafael",
         projeto: "Math-System"
     });
 });
