@@ -1,1 +1,24 @@
-[{"id":1},{"id":2},{"id":3}]
+[
+  {
+    "id": 1
+  },
+  {
+    "id": 4
+  },
+  {
+    "titulo": "Matemática Básica",
+    "descricao": "Um guia prático sobre os fundamentos da matemática.",
+    "autor": "John Doe",
+    "ano": 2023,
+    "categoria": "Matemática",
+    "id": 6
+  },
+  {
+    "id": 5,
+    "titulo": "Matemática Básicaaaaaaa",
+    "descricao": "Um guia prático sobre os fundamentos da matemática.",
+    "autor": "John Doe",
+    "ano": 2023,
+    "categoria": "Matemática"
+  }
+]
