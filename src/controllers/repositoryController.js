@@ -9,9 +9,13 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    const material = req.body;
-    const novoMaterial = repositoryService.addMaterial(material);
-    res.json({ message: "Material adicionado com sucesso", material: novoMaterial });
+    try {
+        const material = req.body;
+        const novoMaterial = repositoryService.addMaterial(material);
+        res.status(201).json({ message: "Material adicionado com sucesso - " + req.body, material: novoMaterial });
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 });
 
 module.exports = router;
